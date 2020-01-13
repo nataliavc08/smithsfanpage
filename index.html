@@ -3,11 +3,13 @@
     <body>
         <head>
             <link rel="stylesheet" href="style.css">
+            <script type="text/javascript" src="script.js"></script> 
+            <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     </head>
         <header>
             <title>Hang The DJ</title>
-                <h1>The Smiths Fan Page</h1>
-            <img src="https://consequenceofsound.net/wp-content/uploads/2017/03/screen-shot-2017-03-28-at-3-38-50-pm.png?w=807"/>
+                <section id="title" onmouseover="titleColor('cyan')"><h1>The Smiths Fan Page</h1></section>
+            <section id="image" onmouseleave="imageHidden()"><img src="https://consequenceofsound.net/wp-content/uploads/2017/03/screen-shot-2017-03-28-at-3-38-50-pm.png?w=807"/></section>
         </header>
     <div>
         <p>
@@ -32,16 +34,24 @@
                         Lord knows, it would be the first time<br>
                 </h4>
             </p>
-        <article>
+        <article id="button">
             <h3>Is Morrissey God?</h3>
-                <button onClick="morrisseyAlert()">Find Out</button>
+                <button onclick="changeColor('cyan')">Is This Heaven?</button><br>
+                <button onclick="morrisseyAlert()">Find Out</button>
                     <script>
                         function morrisseyAlert(){
                             alert("Nope!")
-                        }
-                    </script>
+                        } 
+                    </script> 
                 </article>
             </div>
-        <footer><img src="https://i.pinimg.com/474x/a2/d4/46/a2d44669393f99c8beaede6b3a1bb0af--the-smiths-lyrics-the-smiths-quotes.jpg"/></footer>
+        <footer>
+            <img src="https://i.pinimg.com/474x/a2/d4/46/a2d44669393f99c8beaede6b3a1bb0af--the-smiths-lyrics-the-smiths-quotes.jpg"/>
+            <section>
+            <i class="fa fa-facebook fa-lg"></i>
+            <i class="fa fa-twitter fa-lg"></i> 
+            <i class="fa fa-instagram fa-lg"></i>
+            </section>
+        </footer>
     </body>
 </html>
